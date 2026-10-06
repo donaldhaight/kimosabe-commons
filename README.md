@@ -7,16 +7,20 @@ management and governance operations for the Kimosabe App and the Human Blockcha
 > **Every address is a stakeholder. Every stakeholder gets a job.**
 
 **Live site:** https://commons-jjkmfh2h.manus.space
+**Website source:** [donaldhaight/kimosabe-commons-site](https://github.com/donaldhaight/kimosabe-commons-site) (private)
 **Document index:** [docs/README.md](docs/README.md) — all 18 documents, with reading paths by role
 
 ---
 
 ## What this repository is
 
-This is the complete working package for the engagement *"research the top five open-source DAO
-management platforms and propose a startup public benefit business, including business plan, SRS,
-PRD and website."* It contains the research that answered the question, the company proposed on the
-back of it, the specification for the software that company would run, and the delivered website.
+This is the written package for the engagement *"research the top five open-source DAO management
+platforms and propose a startup public benefit business, including business plan, SRS, PRD and
+website."* It contains the research that answered the question, the company proposed on the back of
+it, and the specification for the software that company would run.
+
+The website source is **not** here. It lives in its own repository so that the deployed code and
+this document set cannot drift apart — see [The website](#the-website) below.
 
 **Nothing in this repository is legal, accounting, insurance, securities or tax advice.** Kimosabe
 Commons, PBC is a **proposed** entity. Every roster, seat, territory and financial figure in the
@@ -85,8 +89,6 @@ docs/
     04-04-daostack.md                  Evidence report
     05-05-snapshot-tally.md            Evidence report
     06-06-public-benefit-adjacent.md   Evidence report
-
-site/                                  Website source snapshot (see below)
 ```
 
 Every document above is browsable and linked from the **[document index](docs/README.md)**.
@@ -95,15 +97,21 @@ Every document above is browsable and linked from the **[document index](docs/RE
 
 ## The website
 
-[`site/`](site) is a snapshot of the source for the live site: React 19 + Vite, Express + tRPC,
-Drizzle ORM on managed MySQL, TypeScript and Tailwind 4.
+The website source lives in its own repository:
+**[donaldhaight/kimosabe-commons-site](https://github.com/donaldhaight/kimosabe-commons-site)** (private).
+
+That repository is **canonical**. The Manus webdev project publishes and records its checkpoints
+directly into it, so it always holds the deployed code. An earlier snapshot was kept in `site/` in
+this repository; it has been removed so that the two cannot diverge.
+
+**Stack:** React 19 + Vite, Express + tRPC, Drizzle ORM on managed MySQL, TypeScript and Tailwind 4.
+The "Civic Ledger" design and the implementation plan are recorded in that repository's `plan.md`.
 
 It carries the public explanation of the company, a browsable territory register, the roster
 application and the sponsor inquiry — both forms persisting to a real database with reference codes,
 consent records, timestamp and source attribution, reviewed through an authenticated admin screen.
 Server-rendered per-route metadata, a crawler-readable pre-hydration content block, sitemap, robots
-and the platform route manifest are included. The design ("Civic Ledger") and the implementation
-plan are recorded in [`site/plan.md`](site/plan.md).
+and the platform route manifest are included.
 
 The site is the top of funnel only. The back-office operations system described in the SRS and PRD
 is a separate build.
@@ -111,7 +119,8 @@ is a separate build.
 ### Running the site locally
 
 ```bash
-cd site
+git clone https://github.com/donaldhaight/kimosabe-commons-site.git
+cd kimosabe-commons-site
 pnpm install
 # provide DATABASE_URL for a MySQL instance, then:
 pnpm db:push

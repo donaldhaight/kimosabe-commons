@@ -186,8 +186,9 @@ open-questions block, and each material claim is cited to the research or labell
 ### Website
 
 The live marketing, recruiting and promotion site for Kimosabe Commons is
-[**https://commons-jjkmfh2h.manus.space**](https://commons-jjkmfh2h.manus.space), with its source
-snapshot in [`../site/`](../site) (Manus Webdev project "Kimosabe Commons"). It carries the
+[**https://commons-jjkmfh2h.manus.space**](https://commons-jjkmfh2h.manus.space). Its source lives in
+its own canonical repository, [donaldhaight/kimosabe-commons-site](https://github.com/donaldhaight/kimosabe-commons-site),
+which the Manus webdev project publishes and checkpoints into directly. It carries the
 public explanation of the company, the territory browser, the roster application and the
 sponsor inquiry — both forms persisting to a real database with an authenticated admin
 review screen.

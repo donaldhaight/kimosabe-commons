@@ -21,7 +21,7 @@ figure is model output built from labelled assumptions.
 | **The founder, short on time** | [Master handoff](./00-START-HERE-MASTER-HANDOFF.md) → [Adversarial review](./20-product/ADVERSARIAL-REVIEW.md) → [Business plan](./10-business/BUSINESS-PLAN.md) |
 | **Deciding whether to form the entity** | [Master handoff](./00-START-HERE-MASTER-HANDOFF.md) → [Entity and governance](./10-business/ENTITY-AND-GOVERNANCE.md) → [Business plan](./10-business/BUSINESS-PLAN.md) |
 | **Raising or recruiting sponsors** | [Business plan](./10-business/BUSINESS-PLAN.md) → [Go-to-market](./10-business/GTM-AND-CHANNELS.md) → [Benefit report on the live site](https://commons-jjkmfh2h.manus.space/benefit-report) |
-| **Building the software** | [SRS](./20-product/SRS.md) → [Data and ledger model](./20-product/DATA-AND-LEDGER-MODEL.md) → [PRD](./20-product/PRD.md) → [Role and permission matrix](./20-product/ROLE-PERMISSION-MATRIX.md) → [`../site/`](../site) |
+| **Building the software** | [SRS](./20-product/SRS.md) → [Data and ledger model](./20-product/DATA-AND-LEDGER-MODEL.md) → [PRD](./20-product/PRD.md) → [Role and permission matrix](./20-product/ROLE-PERMISSION-MATRIX.md) → the [website source repository](https://github.com/donaldhaight/kimosabe-commons-site) |
 | **Reviewing the research basis** | [Landscape synthesis](./research/00-dao-platform-landscape.md) → the six evidence reports → [Adversarial review](./20-product/ADVERSARIAL-REVIEW.md) |
 | **Handing this to another session or person** | [Master handoff](./00-START-HERE-MASTER-HANDOFF.md) → [Engagement brief](./ENGAGEMENT-BRIEF.md) → [Instruction manual](./00-PROJECT-INSTRUCTION-MANUAL.md) |
 
@@ -76,11 +76,16 @@ figure is model output built from labelled assumptions.
 ## The website
 
 The live site is **https://commons-jjkmfh2h.manus.space** and its source sits in
-**[`../site/`](../site)** — React 19 + Vite, Express + tRPC, Drizzle on managed MySQL.
+**[donaldhaight/kimosabe-commons-site](https://github.com/donaldhaight/kimosabe-commons-site)** (private)
+— React 19 + Vite, Express + tRPC, Drizzle on managed MySQL.
 
 It carries the public explanation of the company, a browsable territory register, the roster
 application and the sponsor inquiry, both persisting to a real database with reference codes,
 consent records, timestamp and source attribution, reviewed through an authenticated admin screen.
+
+That repository is canonical: the Manus webdev project publishes and checkpoints directly into it,
+so it always holds the deployed code. An earlier snapshot lived beside these documents; it was
+removed so the two cannot diverge.
 
 ---
 
