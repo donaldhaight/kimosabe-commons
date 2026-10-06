@@ -16,6 +16,20 @@ artifact lives, which decisions are still open, and what to do next.
 
 **Nothing in this engagement is legal, accounting, insurance or securities advice.**
 
+## Contents
+
+1. [The answer in one page](#1-the-answer-in-one-page)
+2. [What the research actually found](#2-what-the-research-actually-found)
+3. [The company being proposed](#3-the-company-being-proposed)
+4. [The artifact set](#4-the-artifact-set)
+5. [Decisions only the founder can make](#5-decisions-only-the-founder-can-make)
+6. [The pre-season gate](#6-the-pre-season-gate)
+7. [Next actions](#7-next-actions)
+8. [How to read this document](#8-how-to-read-this-document)
+
+The full document set, with suggested reading order by role, is indexed in
+[`README.md`](./README.md).
+
 ---
 
 ## 1. The answer in one page
@@ -127,7 +141,7 @@ fiduciary. It does not move money and it does not handle claims.
 
 ## 4. The artifact set
 
-Everything below is in `/home/ubuntu/hb-discovery/`. Each document ends with an explicit
+Everything below lives in this repository's `docs/` folder. Each document ends with an explicit
 open-questions block, and each material claim is cited to the research or labelled
 `REPORTED`, `INFERRED` or `ASSUMED`.
 
@@ -171,8 +185,9 @@ open-questions block, and each material claim is cited to the research or labell
 
 ### Website
 
-The live marketing, recruiting and promotion site for Kimosabe Commons is built at
-**`/home/ubuntu/commons`** (Manus Webdev project "Kimosabe Commons"). It carries the
+The live marketing, recruiting and promotion site for Kimosabe Commons is
+[**https://commons-jjkmfh2h.manus.space**](https://commons-jjkmfh2h.manus.space), with its source
+snapshot in [`../site/`](../site) (Manus Webdev project "Kimosabe Commons"). It carries the
 public explanation of the company, the territory browser, the roster application and the
 sponsor inquiry — both forms persisting to a real database with an authenticated admin
 review screen.

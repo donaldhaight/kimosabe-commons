@@ -11,9 +11,9 @@ created: 2026-10-06
 # Shared Engagement Brief
 
 Read this before writing any deliverable. It carries the shared context that every
-document in this engagement must agree on. Then read `/home/ubuntu/hb-discovery/00-PROJECT-INSTRUCTION-MANUAL.md`
+document in this engagement must agree on. Then read `./00-PROJECT-INSTRUCTION-MANUAL.md`
 for the governing rules, templates and prohibited-claims register, and the research files in
-`/home/ubuntu/hb-discovery/research/` for the evidence base.
+`./research/` for the evidence base.
 
 ---
 
@@ -162,7 +162,7 @@ measurement and recognition package* — never an investment.
 
 ## 8. What the research found — carry these through
 
-Full synthesis: `/home/ubuntu/hb-discovery/research/00-dao-platform-landscape.md`.
+Full synthesis: `./research/00-dao-platform-landscape.md`.
 Per-platform evidence: `01-01-aragon.md`, `02-02-daohaus.md`, `03-03-colony.md`,
 `04-04-daostack.md`, `05-05-snapshot-tally.md`, `06-06-public-benefit-adjacent.md`.
 

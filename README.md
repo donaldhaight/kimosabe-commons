@@ -7,6 +7,7 @@ management and governance operations for the Kimosabe App and the Human Blockcha
 > **Every address is a stakeholder. Every stakeholder gets a job.**
 
 **Live site:** https://commons-jjkmfh2h.manus.space
+**Document index:** [docs/README.md](docs/README.md) — all 18 documents, with reading paths by role
 
 ---
 
@@ -28,6 +29,9 @@ documents and on the website is labelled model output or illustrative sample dat
 Read **[`docs/00-START-HERE-MASTER-HANDOFF.md`](docs/00-START-HERE-MASTER-HANDOFF.md)** first. It is
 the executive brief: what was researched, what is proposed, where every artifact lives, which
 decisions remain open, and the pre-season gate checklist.
+
+For the whole set with suggested reading order, use the
+**[document index](docs/README.md)**.
 
 ---
 
@@ -57,6 +61,8 @@ and what they completed this season.
 ## Repository layout
 
 ```
+README.md                              This file
+docs/README.md                         Document index and reading paths
 docs/
   00-START-HERE-MASTER-HANDOFF.md      Executive brief and index — read this first
   00-PROJECT-INSTRUCTION-MANUAL.md     The governance constitution for the engagement
@@ -73,23 +79,31 @@ docs/
     ADVERSARIAL-REVIEW.md              18 findings, trust boundaries, pre-season gate
   research/
     00-dao-platform-landscape.md       Comparative study and differentiation thesis
-    01-01-aragon.md … 06-06-…          Six evidence reports
+    01-01-aragon.md                    Evidence report
+    02-02-daohaus.md                   Evidence report
+    03-03-colony.md                    Evidence report
+    04-04-daostack.md                  Evidence report
+    05-05-snapshot-tally.md            Evidence report
+    06-06-public-benefit-adjacent.md   Evidence report
 
 site/                                  Website source snapshot (see below)
 ```
+
+Every document above is browsable and linked from the **[document index](docs/README.md)**.
 
 ---
 
 ## The website
 
-`site/` is a snapshot of the source for the live site: React 19 + Vite, Express + tRPC, Drizzle ORM
-on managed MySQL, TypeScript and Tailwind 4.
+[`site/`](site) is a snapshot of the source for the live site: React 19 + Vite, Express + tRPC,
+Drizzle ORM on managed MySQL, TypeScript and Tailwind 4.
 
 It carries the public explanation of the company, a browsable territory register, the roster
 application and the sponsor inquiry — both forms persisting to a real database with reference codes,
 consent records, timestamp and source attribution, reviewed through an authenticated admin screen.
 Server-rendered per-route metadata, a crawler-readable pre-hydration content block, sitemap, robots
-and the platform route manifest are included.
+and the platform route manifest are included. The design ("Civic Ledger") and the implementation
+plan are recorded in [`site/plan.md`](site/plan.md).
 
 The site is the top of funnel only. The back-office operations system described in the SRS and PRD
 is a separate build.

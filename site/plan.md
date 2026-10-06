@@ -1,7 +1,7 @@
 # Implementation Plan — Kimosabe Commons Public Website & Recruiting Funnel
 
 Project: `commons` (Manus Webdev, Cloud, React/Express/tRPC/Drizzle, server + database enabled)
-Governing document: `/home/ubuntu/hb-discovery/00-PROJECT-INSTRUCTION-MANUAL.md`
+Governing document: `../docs/00-PROJECT-INSTRUCTION-MANUAL.md`
 
 ## 1. What is being built
 
