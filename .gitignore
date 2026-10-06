@@ -1,0 +1,16 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
+# dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# local environment: keep committed examples, never real values
+.env
+.env.local
+.env.*.local
